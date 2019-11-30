@@ -6,20 +6,41 @@ body{
 li, .first_section_main_content_button1, .first_section_main_content_button2, .first_section_scroll, .second_section_arrows, .first_item_button, .second_item_button, .third_item_button
 , .sixth_section_first_item_button, .sixth_section_second_item_button, .sixth_section_third_item_button, .sixth_section_project_team_flex_item_work, .seventh_section_clients_flex_item_block1,
 .seventh_section_clients_flex_item_block1, .seventh_section_clients_flex_item_block2, .eighth_section_telephone_information_icons_flex, .first_section_acide p, .second_section_video_play,
-.second_section_slider_second_picture_video_play {
+.second_section_slider_second_picture_video_play, .sixth_section_main_text_arrows, input[type="button"] {
   cursor:pointer;
 }
 
+.second_section_arrows_rounds:hover, .sixth_section_main_text_arrows_round:hover{
+  opacity: 1;
+}
+
+
+.header_flex{
+  display:flex;
+  height: 83px;
+  line-height: 83px;
+  background: #131313;
+  width: 1440px;
+  .nav_name_of_project{
+    margin-left: 82px;
+    width: 180px;
+    h1{
+    font-family: FuturaDemiC;
+    font-size: 14px;
+    color: #E3B873;
+    opacity: 1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    }
+}
 
 nav{
-  width: 1440px;
-  height: 83px;
+  width: 740px;
   margin-top: 0px;
   margin-bottom: 0px;
-  background: #131313;
+
 
   .header_navigation{
-    height: 37px;
     padding-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -41,45 +62,41 @@ nav{
       padding-left:0px; 
       color: #E3B873;
     }
-    .nav_name_of_project{
-      margin-right: 95px;
-      width: 180px;
-      font-family: FuturaDemiC;
-      font-size: 14px;
-      line-height: 16px;
-      color: #E3B873;
-      opacity: 1;
-      }
-      .nav_number{
-      font-family: FuturaDemiC;
-      font-size: 14px;
-      line-height: 16px;
-      text-align: right;
-      text-decoration-line: underline;
-      opacity: 1;
-      width: 126px;
-      margin-right: 50px;
-
-       & a{
-        color: #E3B873;
-       }
-      }
-      .nav_call_request{
-        width: 161px;
-        background: #E3B873;
-        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-        border-radius: 2px;
-        font-family: FuturaDemiC;
-        font-size: 13px;
-        line-height: 37px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        opacity: 1;
-        margin-right: 0px;
-      }
   }
 }
+  .nav_number{
+    font-family: FuturaDemiC;
+    font-size: 14px;
+    line-height: 83px;
+    text-align: right;
+    text-decoration-line: underline;
+    opacity: 1;
+    width: 126px;
+    margin-right: 50px;
+
+    & a{
+      color: #E3B873;
+    }
+    }
+    .nav_call_request{
+      width: 161px;
+      height: 37px;
+      background: #E3B873;
+      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+      border-radius: 2px;
+      font-family: FuturaDemiC;
+      font-size: 13px;
+      line-height: 37px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      opacity: 1;
+      margin-right: 0px;
+      margin-top: 25px;
+    }
+}
+
+
 
 .first_section{
 width: 1440px;
@@ -88,6 +105,10 @@ background: #131313;
     width: 82px;
     height: 707px;
     background: #131313;
+
+    & a{
+      color: #E3B873;
+    }
 
     p{
     font-family: FuturaDemiC;
@@ -128,14 +149,15 @@ background: #131313;
       line-height: 30px;
       color: #FFFFFF;
     }
-    h1{
+    .title{
       font-family: Yeseva One;
       font-style: normal;
       font-weight: normal;
-      font-size: 40px;
+      font-size: 38px;
       line-height: 53px;
       text-transform: uppercase;
       color: #FFFFFF;
+      margin-top:0px;
     }
     .text_color{
       color: #E3B873;
@@ -213,6 +235,21 @@ background-color: #131313;
       width: 206px;
       height: 28px;
       margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+
+      .active{
+        opacity: 1;
+      }
+
+      &_rounds{
+        width: 9.5px;
+        height: 9.5px;
+        border-radius: 50%;
+        background-color: white;
+        opacity: 0.5;
+      }
+
     }
 
     &_navigation{   
@@ -409,14 +446,61 @@ background-color: #131313;
     color: #363636;
     }
     &_short_form{
-    background-image: url(img/firstform.png);
     width: 769px;
     height: 76px;
     margin: 0 auto;
     margin-top: 30px;
+
+    form{
+      height: 51px;
+    }
+
+    &_input{
+      display:flex;
+      justify-content: space-between;
+
+      & label{
+        font-family: FuturaBookC;
+        font-size: 15px;
+        line-height: 20px;
+        color: rgba(54, 54, 54, 0.5);
+      }
+    }
+    input[type="text"]{
+      border:none;
+      border-bottom:1px solid grey;
+      width: 232px;
+      height: 52px;
+    }
+
+
+      input[type="text"]::placeholder{
+        font-family: FuturaBookC;
+        font-size: 18px;
+        line-height: 24px;
+        color: #363636;
+
+      }
+
+    input[type="button"]{
+      border:none;
+      width: 213px;
+      height: 51px;
+      background: #E3B873;
+      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+      font-family: FuturaDemiC;
+      font-size: 13px;
+      line-height: 18px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-top: 20px;
+    }
+
     }
     &_agreesign{
     margin:0 auto;
+    margin-top: 15px;
     width: 285.62px;
     height: 18px;
     }
@@ -611,6 +695,42 @@ background-color: #131313;
     background-image: url(img/advback.png);
     background-repeat: no-repeat;
     
+
+    .first_round_text{
+      position: absolute;
+      width: 460px;
+      margin-left: 280px;
+      display:flex;
+      justify-content: space-between;
+    }
+
+    .second_round_text{
+      position: absolute;
+      width: 200px;
+      margin-left: 417px;
+      margin-top:110px;
+      display:flex;
+      justify-content: space-between;
+    }
+
+    .third_round_text{
+      position: absolute;
+      width: 200px;
+      margin-left: 471px;
+      margin-top:264px;
+      display:flex;
+      justify-content: space-between;
+    }
+
+    .fourth_round_text{
+      position: absolute;
+      width: 305px;
+      display:flex;
+      justify-content: space-between;
+      margin-left: 445px;
+      margin-top:423px;
+    }
+
     &_number_round{
       width: 42px;
       height: 42px;
@@ -626,54 +746,127 @@ background-color: #131313;
       text-align: center;
       color: #FFFFFF;  
     }
-    .first_round{
-      position: absolute;
-      margin-left: 290px;
-    }
-    .second_round{
-      position: absolute;
-      margin-left: 417px;
-     margin-top:110px;
-    }
-    .third_round{
-      position: absolute;
-      margin-left: 471px;
-      margin-top:264px;
-    }
-    .fourth_round{
-      position: absolute;
-      margin-left: 445px;
-      margin-top:423px;
-    }
 
     .first_text{
-      position: absolute;
       width: 364px;
       height: 42px;
-      margin-top: 7px;
-      margin-left: 386px;
+      margin-top: 9px;
     }
     .second_text{
-      position: absolute;
       width: 99px;
       height: 21px;
-      margin-top: 129px;
-      margin-left: 505px;
+      margin-top: 18px;
     }
     .third_text{
-      position: absolute;
       width: 122px;
       height: 21px;
-      margin-top: 283px;
-      margin-left: 540px;
+      margin-top: 18px;
     }
     .fourth_text{
-      position: absolute;
       width: 225px;
       height: 42px;
-      margin-top: 432px;
-      margin-left: 517px;
+      margin-top: 9px;
     }
+
+    .third_section_register_form{
+      float: right;
+      width: 506px;
+      height: 470px;
+      background-color: #131313;
+      form{
+        width: 408px;
+        margin:0 auto;
+}
+
+    input[type="text"]{
+      border:none;
+      border-bottom:1px solid grey;
+      background-color: #131313;
+      width: 408px;
+      height: 49px;
+    }
+
+
+      input[type="text"]::placeholder{
+        font-family: FuturaMediumC;
+        font-size: 18px;
+        line-height: 25px;
+
+        color: #FFFFFF;
+
+      }
+
+      input[type="email"]{
+        border:none;
+        border-bottom:1px solid grey;
+        background-color: #131313;
+        width: 408px;
+        height: 49px;
+      }
+  
+        input[type="email"]::placeholder{
+          font-family: FuturaMediumC;
+          font-size: 18px;
+          line-height: 25px;
+  
+          color: #FFFFFF;
+  
+        }
+
+        input[type="checkbox"]{
+          width: 18px;
+          height: 18px;
+          background-color: #E3B873;
+        }
+
+        input[type="button"]{
+          border:none;
+          width: 213px;
+          height: 51px;
+          background: #E3B873;
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+          font-family: FuturaDemiC;
+          font-size: 13px;
+          line-height: 18px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          float: right;
+        }
+
+        .text_near_checkbox{
+          font-family: FuturaBookC;
+          font-size: 16px;
+          line-height: 22px;
+  
+          color: #FFFFFF;
+        }
+      &_input{
+
+        & label{
+          font-family: FuturaBookC;
+          font-size: 15px;
+          line-height: 20px;
+          color: rgba(255, 255, 255, 0.5);
+          
+        }
+      }
+
+
+      &_title{
+        margin:0 auto;
+        margin-top: 20px;
+        font-family: FuturaDemiC;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        width: 247px;
+        color: #FFFFFF;
+
+      }
+
+    }
+
     &_roundadv{ 
     position: absolute;
     width: 650px;
@@ -718,13 +911,6 @@ background-color: #131313;
         margin-top: -6px;
       }
     }
-    }
-
-    &_register_form{
-    float: right;
-    width: 506px;
-    height: 509px;
-    background-image: url(img/secondform.png);
     }
 }
 
@@ -1121,6 +1307,24 @@ background-color: #131313;
       width: 342px;
       height: 601px;
 
+      &_arrows{
+        margin-top: 90px;
+        display: flex;
+        justify-content: space-between;
+
+        .active{
+          opacity: 1;
+        }
+
+        &_round{
+          width: 9.5px;
+          height: 9.5px;
+          border-radius: 50%;
+          background-color: white;
+          opacity: 0.5;
+        }
+      }
+
       &_working{
         font-family: FuturaDemiC;
         font-size: 15px;
@@ -1163,9 +1367,6 @@ background-color: #131313;
         font-size: 15px;
         line-height: 25px;
         color: #FFFFFF;
-      }
-      & img{
-        margin-top: 90px;
       }
     }
     }
@@ -1427,17 +1628,112 @@ background-color: #131313;
     background-image: url(img/9blockback.png);
     background-repeat: no-repeat;
     background-position-y: 206px;
-    text-align: center;
 
     &_submitform{
     width: 883px;
-    height: 445.32px;
-    background-color:none;
-    background-image: url(img/forma.png);
-    //background: linear-gradient(to bottom, white 50%,  #131313 50%);
+    background-color:#131313;
     margin:0 auto;
     margin-top: 60px;
     margin-bottom: 1px;
+      form{
+        width: 520px;
+        height: 376px;
+        margin:0 auto;
+        margin-top: 50px;
+}
+
+    input[type="text"]{
+      border:none;
+      border-bottom:1px solid grey;
+      background-color: #131313;
+      width: 232px;
+      height: 49px;
+    }
+
+
+      input[type="text"]::placeholder{
+        font-family: FuturaMediumC;
+        font-size: 18px;
+        line-height: 25px;
+
+        color: #FFFFFF;
+
+      }
+
+      input[type="email"]{
+        border:none;
+        border-bottom:1px solid grey;
+        background-color: #131313;
+        width: 520px;
+        height: 49px;
+      }
+  
+        input[type="email"]::placeholder{
+          font-family: FuturaMediumC;
+          font-size: 18px;
+          line-height: 25px;
+          color: #FFFFFF;
+  
+        }
+
+        input[type="checkbox"]{
+          width: 18px;
+          height: 18px;
+          background-color: #E3B873;
+          margin-left: 120px;
+        }
+
+        input[type="button"]{
+          border:none;
+          width: 213px;
+          height: 51px;
+          margin-left: 150px;
+          margin-top: 50px;
+          background: #E3B873;
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+          font-family: FuturaDemiC;
+          font-size: 13px;
+          line-height: 18px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #FFFFFF;
+        }
+
+        .text_near_checkbox{
+          font-family: FuturaBookC;
+          font-size: 16px;
+          line-height: 22px;
+  
+          color: #FFFFFF;
+        }
+      &_input{
+        display:flex;
+        justify-content: space-between;
+
+        & label{
+          font-family: FuturaBookC;
+          font-size: 15px;
+          line-height: 20px;
+          color: rgba(255, 255, 255, 0.5);
+          
+        }
+      }
+      &_title{
+        margin:0 auto;
+        margin-top: 20px;
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-align: center;
+        width: 257px;
+
+      }
+    
     }
     &_telephone_information{  
     width: 589px;
