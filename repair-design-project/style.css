@@ -1543,7 +1543,7 @@ li, .first_section_main_content_button1, .first_section_main_content_button2, .f
   font-family: Yeseva One;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 23px;
   text-transform: uppercase;
   color: #E3B873;
@@ -1682,6 +1682,10 @@ li, .first_section_main_content_button1, .first_section_main_content_button2, .f
 
 .sixth_section_our_team_pictures {
   margin-top: 1px;
+}
+
+.seventh_section {
+  width: 1440px;
 }
 
 .seventh_section_our_clients {
@@ -2017,6 +2021,14 @@ li, .first_section_main_content_button1, .first_section_main_content_button2, .f
   margin: 0 auto;
 }
 
+.eighth_section_telephone_information_text {
+  color: #936823;
+}
+
+.eighth_section_telephone_information_text a {
+  color: #936823;
+}
+
 .eighth_section_telephone_information_icons_flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2061,8 +2073,34 @@ footer {
   line-height: 133px;
 }
 
-footer .footer_navigation {
-  height: 37px;
+footer .footer_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 133px;
+  line-height: 133px;
+  background: #131313;
+  width: 1440px;
+}
+
+footer .footer_flex .nav_name_of_project {
+  margin-left: 82px;
+  width: 180px;
+  font-family: FuturaDemiC;
+  font-size: 14px;
+  color: #E3B873;
+  opacity: 1;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+footer .footer_flex nav {
+  width: 740px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+footer .footer_flex nav .footer_navigation {
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -2071,7 +2109,7 @@ footer .footer_navigation {
   margin-left: 100px;
 }
 
-footer .footer_navigation_item {
+footer .footer_flex nav .footer_navigation_item {
   display: inline-block;
   height: 37px;
   margin-top: 22px;
@@ -2081,25 +2119,15 @@ footer .footer_navigation_item {
   line-height: 16px;
 }
 
-footer .footer_navigation .home_element {
+footer .footer_flex nav .footer_navigation .home_element {
   padding-left: 0px;
   color: #E3B873;
 }
 
-footer .footer_navigation .nav_name_of_project {
-  margin-right: 95px;
-  width: 180px;
+footer .footer_flex .nav_number {
   font-family: FuturaDemiC;
   font-size: 14px;
-  line-height: 16px;
-  color: #E3B873;
-  opacity: 1;
-}
-
-footer .footer_navigation .nav_number {
-  font-family: FuturaDemiC;
-  font-size: 14px;
-  line-height: 16px;
+  line-height: 133px;
   text-align: right;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -2108,12 +2136,13 @@ footer .footer_navigation .nav_number {
   margin-right: 50px;
 }
 
-footer .footer_navigation .nav_number a {
+footer .footer_flex .nav_number a {
   color: #E3B873;
 }
 
-footer .footer_navigation .nav_call_request {
+footer .footer_flex .nav_call_request {
   width: 161px;
+  height: 37px;
   background: #E3B873;
   -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
           box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
@@ -2126,6 +2155,7 @@ footer .footer_navigation .nav_call_request {
   color: #FFFFFF;
   opacity: 1;
   margin-right: 0px;
+  margin-top: 48px;
 }
 
 @media (max-width: 375px) {

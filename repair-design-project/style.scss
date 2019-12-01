@@ -1,3 +1,8 @@
+@function darker($color, $tone) {
+  $adjust: -16*$tone;
+  @return adjust-color($color, $red: $adjust, $green: $adjust, $blue: $adjust);
+}
+
 body{
   margin:0px;
   padding:0px;
@@ -1296,9 +1301,6 @@ background-color: #131313;
       margin-top: 100px;
     }
     &_picture{
-      //position: relative;
-      // width:765px;
-      // height: 376px;
       float: right;
       margin-right:100px;
       margin-top: -280px;
@@ -1356,7 +1358,7 @@ background-color: #131313;
         font-family: Yeseva One;
         font-style: normal;
         font-weight: normal;
-        font-size: 15px;
+        font-size: 13px;
         line-height: 23px;
         text-transform: uppercase;
         color: #E3B873;
@@ -1479,6 +1481,7 @@ background-color: #131313;
 }
 
 .seventh_section{
+  width: 1440px;
 
     &_our_clients{
     width: 385px;
@@ -1748,6 +1751,14 @@ background-color: #131313;
     color: #E3B873;
     margin: 0 auto;
 
+    &_text{
+      color: darker(#E3B873, 5);
+    }
+
+      &_text a{
+        color: darker(#E3B873, 5);
+      }
+
       &_icons_flex{
         display: flex;
         justify-content: space-around;
@@ -1785,54 +1796,70 @@ background-color: #131313;
           background: #131313;
           line-height:133px;
         
-          .footer_navigation{
-            height: 37px;
-            padding-left: 0px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            list-style-type: none; 
-            color: #FFFFFF;
-            margin-left: 100px;
-        
-            &_item{
-              display: inline-block;
-              height: 37px;
-              margin-top: 22px;
-              margin-right: 45px;
-              font-family: FuturaBookC;
-              font-size: 14px;
-              line-height: 16px;
-        
-            }
-            .home_element{
-              padding-left:0px; 
-              color: #E3B873;
-            }
+          .footer_flex{
+            display:flex;
+            height: 133px;
+            line-height: 133px;
+            background: #131313;
+            width: 1440px;
             .nav_name_of_project{
-              margin-right: 95px;
+              margin-left: 82px;
               width: 180px;
               font-family: FuturaDemiC;
               font-size: 14px;
-              line-height: 16px;
               color: #E3B873;
               opacity: 1;
+              margin-top: 0px;
+              margin-bottom: 0px;
+          }
+          
+          nav{
+            width: 740px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+          
+          
+            .footer_navigation{
+              padding-left: 0px;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              list-style-type: none; 
+              color: #FFFFFF;
+              margin-left: 100px;
+          
+              &_item{
+                display: inline-block;
+                height: 37px;
+                margin-top: 22px;
+                margin-right: 45px;
+                font-family: FuturaBookC;
+                font-size: 14px;
+                line-height: 16px;
+          
               }
-              .nav_number{
+              .home_element{
+                padding-left:0px; 
+                color: #E3B873;
+              }
+            }
+          }
+            .nav_number{
               font-family: FuturaDemiC;
               font-size: 14px;
-              line-height: 16px;
+              line-height: 133px;
               text-align: right;
               text-decoration-line: underline;
               opacity: 1;
               width: 126px;
               margin-right: 50px;
-        
-               & a{
+          
+              & a{
                 color: #E3B873;
-               }
+              }
               }
               .nav_call_request{
                 width: 161px;
+                height: 37px;
                 background: #E3B873;
                 box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
                 border-radius: 2px;
@@ -1844,6 +1871,7 @@ background-color: #131313;
                 color: #FFFFFF;
                 opacity: 1;
                 margin-right: 0px;
+                margin-top: 48px;
               }
           }
         }
